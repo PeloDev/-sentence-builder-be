@@ -1,3 +1,4 @@
+// Source: https://www.npmjs.com/package/interjection-js
 const interjections = [
   "Aha",
   "Boo-yah",

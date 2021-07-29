@@ -4,15 +4,8 @@ const wordFeeder = require('../helpers/word-feeder');
 
 exports.search_words = async (req, res) => {
     const { wordType, searchTerm } = req.query;
-    // let findObj = {
-    //     wordType:  wordType
-    // };
-    // if (searchTerm) {
-    //     findObj = { ...findObj, value: {"$regex":  searchTerm, "$options": "i"}}
-    // }
-    // const words = await Word.find(findObj);
-    result = wordFeeder.getDeterminers();
-    res.json({count: result.length, result: result});
+    result = wordFeeder.getWordsByType(wordType, searchTerm);
+    res.json(result);
 };
 
 exports.store_sentence = async (req, res) => {

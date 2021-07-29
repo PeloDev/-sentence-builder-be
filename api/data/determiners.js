@@ -1,3 +1,4 @@
+// Source: https://en.wikipedia.org/wiki/List_of_English_determiners
 const determiners = [
     'a',
     'a few',
