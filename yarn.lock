@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@rijk/conjunctions@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@rijk/conjunctions/-/conjunctions-1.0.0.tgz#8b96f4169f51a5d18d80985fe3adb843ec488842"
+  integrity sha512-0PfpGjJY0O192ICWAWzZ3zOqz3W4+IIbDx/ajV507mztV76epnhOcujMBNSHnwDYyBwBfawLz5YfbZP41d4NwQ==
+
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
@@ -68,6 +73,11 @@ acorn@^2.1.0:
   version "2.7.0"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-2.7.0.tgz#ab6e7d9d886aaca8b085bc3312b79a198433f0e7"
   integrity sha1-q259nYhqrKiwhbwzEreaGYQz8Oc=
+
+adjectives@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/adjectives/-/adjectives-1.0.2.tgz#c2d510448338914d20b986630649ae75a04960c6"
+  integrity sha512-gaoTLTymNfCmuCPsLSDcz/WWFBxNlAOoDzWt2fInQqQ2BTT57lG0RHzBujS0QkwbGw4lHgpkOmYcQ9rktKfBmw==
 
 align-text@^0.1.1, align-text@^0.1.3:
   version "0.1.4"
@@ -523,6 +533,11 @@ end-of-stream@^1.1.0:
   integrity sha512-+uw1inIHVPQoaVuHzRyXd21icM+cnt4CzD5rW+NC1wjOUSTOs+Te7FOv7AhN7vS9x/oIyhLP5PR1H+phQAHu5Q==
   dependencies:
     once "^1.4.0"
+
+english-determiners@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/english-determiners/-/english-determiners-4.0.1.tgz#ec1dcc279b3883942b862ca66dc1cf57c698a7ed"
+  integrity sha512-VR71ykuSAXsMt3HBa92EyZ1+5la+915gw/E2XlSoxv16f6sk975NkyrB0OV9XRqrxxbbvIUt23Mwdo6p09vcTA==
 
 escape-goat@^2.0.0:
   version "2.1.1"
@@ -1102,6 +1117,11 @@ normalize-url@^4.1.0:
   resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-4.5.1.tgz#0dd90cf1288ee1d1313b87081c9a5932ee48518a"
   integrity sha512-9UZCFRHQdNrfTpGg8+1INIg93B6zE0aXMVFkw1WFwvO4SlZywU6aLg5Of0Ap/PgcbSw4LNxvMWXMeugwMCX0AA==
 
+nouns@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/nouns/-/nouns-1.0.1.tgz#4026c0c2c95f793590b339034fb679f9ab9afb04"
+  integrity sha1-QCbAwslfeTWQszkDT7Z5+aua+wQ=
+
 object-assign@^4:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
@@ -1180,6 +1200,11 @@ prepend-http@^2.0.0:
   resolved "https://registry.yarnpkg.com/prepend-http/-/prepend-http-2.0.0.tgz#e92434bfa5ea8c19f41cdfd401d741a3c819d897"
   integrity sha1-6SQ0v6XqjBn0HN/UAddBo8gZ2Jc=
 
+prepositions@^0.0.0:
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/prepositions/-/prepositions-0.0.0.tgz#862cd930eb4a426e4149c5c95d4be15ae0057536"
+  integrity sha1-hizZMOtKQm5BScXJXUvhWuAFdTY=
+
 process-nextick-args@~2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-2.0.1.tgz#7820d9b16120cc55ca9ae7792680ae7dba6d7fe2"
@@ -1198,6 +1223,11 @@ promise@~2.0:
   integrity sha1-RmSKqdYFr10ucMMCS/WUNtoCuA4=
   dependencies:
     is-promise "~1"
+
+pronouns@^1.3.3:
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/pronouns/-/pronouns-1.3.3.tgz#c2684724f31020225dc1734f1887949ef5424f1b"
+  integrity sha512-Tx9PA3PSyYEaMvjKiFFg5x010hm5uZzJEQsXcCVsx/Cez08WJeFOe8B5rr8ytG7UV/2IRNVpss5YxeVERBYm0g==
 
 proxy-addr@~2.0.4:
   version "2.0.7"
@@ -1638,6 +1668,11 @@ vary@^1, vary@~1.1.2:
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=
 
+verb-corpus@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/verb-corpus/-/verb-corpus-1.6.0.tgz#aaaf77e44f2939563d9baf7d20b1a630bcc9555f"
+  integrity sha512-eQP2QDtDYLtERJBLTJhZ0xp34amaLjLqh3k8FlzGP6SjoFRjkhkIyNLoGD0rKwW6cTKajoxUFPQoiGujBmftLQ==
+
 void-elements@~2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/void-elements/-/void-elements-2.0.1.tgz#c066afb582bb1cb4128d60ea92392e94d5e9dbec"
@@ -1662,6 +1697,11 @@ with@~4.0.0:
   dependencies:
     acorn "^1.0.1"
     acorn-globals "^1.0.3"
+
+wordnet-adverbarray@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/wordnet-adverbarray/-/wordnet-adverbarray-0.1.1.tgz#4778860d3f71279c6ca3ab0cb49584baed37cd06"
+  integrity sha512-ZVCNGE21kjgju3QGzIyxGyK17vmoe1evTcbyPp7Gepf9Q4NESiUg42m4DQcjzV3X+X2IqVlYueNFm9J5OkKpmw==
 
 wordwrap@0.0.2:
   version "0.0.2"

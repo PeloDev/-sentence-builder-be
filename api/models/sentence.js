@@ -1,15 +1,12 @@
-const mongoose = require('mongoose');
-const Word = require('./word');
+let mongoose = require('mongoose');
 
-const SentenceSchema = new mongoose.Schema({
+let SentenceSchema = new mongoose.Schema({
     sentence: {
-        type: [ Word ],
+        type: [ Object ],
         index: true
     }
 })
 
-let Sentence = mongoose.model('Sentence', SentenceSchema);
-
 module.exports = {
-    Sentence: Sentence
+    Sentence: mongoose.model('Sentence', SentenceSchema)
 }

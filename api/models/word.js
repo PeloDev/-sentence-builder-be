@@ -19,10 +19,8 @@ const WordSchema = new mongoose.Schema({
         default: '',
         index: true
     }
-})
-
-let Word = mongoose.model('Word', WordSchema);
+});
 
 module.exports = {
-    Word: Word
+    Word: mongoose.model('Word', WordSchema)
 }

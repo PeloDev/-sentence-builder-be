@@ -4,7 +4,7 @@ let controllers = require('../controllers');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.send("Sentence builder back end");
 });
 
 router.get('/api/get-words', controllers.search_words);
