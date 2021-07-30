@@ -7,6 +7,8 @@ router.get('/', function(req, res, next) {
   res.send("Sentence builder back end");
 });
 
+router.get('/api/get-word-types', controllers.get_word_types);
+
 router.get('/api/get-words', controllers.search_words);
 
 router.post('/api/store-sentence', controllers.store_sentence);

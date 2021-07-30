@@ -9,6 +9,9 @@ const determiners = require('../../data/determiners');
 const interjections = require('../../data/interjections');
 const { uniqueValues } = require('../helper-functions');
 
+const pluralize = require('pluralize');
+const tensify = require('tensify');
+
 exports.getNouns = () => {
     return nouns;
 };
@@ -55,6 +58,34 @@ exports.getInterjections = () => {
     return interjections;
 };
 
+function pluralizeNouns(wordArr) {
+    let newWordArr = wordArr;
+    for (let i = 0; i < wordArr.length; i++) {
+        try {
+            let pluralWord = pluralize(wordArr[i]);
+            if (!wordArr.includes(pluralWord))
+                newWordArr.push(pluralWord);
+        } catch (error) {
+            continue;
+        }
+    }
+    return newWordArr.sort();
+}
+
+function pastTensifyVerbs(wordArr) {
+    let newWordArr = wordArr;
+    for (let i = 0; i < wordArr.length; i++) {
+        try {
+            let pastTenseWord = tensify(wordArr[i]).past;
+            if (!wordArr.includes(pastTenseWord))
+                newWordArr.push(pastTenseWord);
+        } catch (error) {
+            continue;
+        }
+    }
+    return newWordArr.sort();
+}
+
 exports.getWordsByType = (wordType, searchTerm = "") => {
     let words = [];
     let isValidType = true;
@@ -68,10 +99,10 @@ exports.getWordsByType = (wordType, searchTerm = "") => {
     }
     switch (wordType.toLowerCase()) {
         case 'noun':
-            words = this.getNouns();
+            words = pluralizeNouns(this.getNouns());
             break;
         case 'verb':
-            words = this.getVerbs();
+            words = pastTensifyVerbs(this.getVerbs());
             break;
         case 'adjective':
             words = this.getAdjectives();
