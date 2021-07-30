@@ -142,3 +142,34 @@ exports.getWordsByType = (wordType, searchTerm = "") => {
         words: words
     };
 }
+
+// Fisher-Yates (aka Knuth) Shuffle
+function shuffle(array) {
+    var currentIndex = array.length,  randomIndex;
+  
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+  
+      // Pick a remaining element...
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+  
+      // And swap it with the current element.
+      [array[currentIndex], array[randomIndex]] = [
+        array[randomIndex], array[currentIndex]];
+    }
+  
+    return array;
+  }
+
+exports.getRandomWordsByType = (wordType, count = 10) => {
+    let wordObs = this.getWordsByType(wordType);
+    let isValidType = wordObs.message.length < 1;
+    let words =  shuffle(wordObs.words).slice(0, count);
+    return {
+        message: isValidType !== true ? 'Not a valid word type' : '',
+        count: words.length,
+        wordType: wordType,
+        words: words
+    };
+}

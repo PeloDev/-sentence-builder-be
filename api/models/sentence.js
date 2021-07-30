@@ -4,6 +4,10 @@ let SentenceSchema = new mongoose.Schema({
     sentence: {
         type: [ Object ],
         index: true
+    },
+    timestamp: {
+        type: Date,
+        default: new Date()
     }
 })
 
